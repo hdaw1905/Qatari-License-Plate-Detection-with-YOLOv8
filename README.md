@@ -185,4 +185,3 @@ Feel free to reach out with any questions or contributions!
 2. Highlighted the excluded files and directories (`images`, `labels`, etc.) in the relevant paths.
 3. Adjusted the formatting to align with the provided structure and clarified the role of each directory.
 
-Replace placeholders like `[Your Name]` with your actual details.
