@@ -1,4 +1,5 @@
 # Qatari License Plate Detection with YOLOv8
+![image](https://github.com/user-attachments/assets/e67a7bea-8785-4ac6-90f2-b6dac6f560c0)
 
 This project implements a custom object detection model to detect Qatari license plates using YOLOv8. It leverages the Roboflow API to download and manage datasets and uses the Ultralytics YOLOv8 library for training and evaluation.
 
@@ -100,6 +101,7 @@ conf_matrix_path = f"/content/{HOME}/datasets/{HOME}/datasets/{HOME}/datasets/ru
 if os.path.exists(conf_matrix_path):
     display(Image(filename=conf_matrix_path, width=600))
 ```
+![image](https://github.com/user-attachments/assets/606014c9-e0e4-4e3f-ba41-d0d0cde0785b)
 
 2.**Training Results**:
 Shows a graphical summary of the training process.
@@ -108,6 +110,7 @@ conf_matrix_path = f"/content/{HOME}/datasets/{HOME}/datasets/{HOME}/datasets/ru
 if os.path.exists(conf_matrix_path):
     display(Image(filename=conf_matrix_path, width=600))
 ```
+![image](https://github.com/user-attachments/assets/f9be455c-b95c-4e8c-bcae-34d4a7c8aa55)
 
 3.**Validation Batch Predictions**:
 Displays predictions on a validation batch.
@@ -117,6 +120,7 @@ conf_matrix_path = f"/content/{HOME}/datasets/{HOME}/datasets/{HOME}/datasets/ru
 if os.path.exists(conf_matrix_path):
     display(Image(filename=conf_matrix_path, width=600))
 ```
+![image](https://github.com/user-attachments/assets/5d3d1763-359b-431f-a809-e18ba74cc49c)
 
 ## Directory Structure  :
 ```bash
