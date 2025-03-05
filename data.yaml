@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Qatari_License']
+
+roboflow:
+  workspace: husham-eina
+  project: qatari_license_plate_detection
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/husham-eina/qatari_license_plate_detection/dataset/2
