@@ -86,8 +86,99 @@ To train the YOLOv8 model, use the following command:
 ```
 
 Training Hyperparameters:
-- **Model**: yolov8s.pt (YOLOv8 small model).
-- **Epochs**: 25.
+-**Model**: yolov8s.pt (YOLOv8 small model).
+-**Epochs**: 25.
 -**Image Size**: 800x800
 -**Data Path**: Path to the downloaded dataset YAML file.
 
+## Results
+After training, the following results are visualized:
+1.**Confusion Matrix**:
+Displays the confusion matrix for the model's predictions.
+```bash
+conf_matrix_path = f"/content/{HOME}/datasets/{HOME}/datasets/{HOME}/datasets/runs/detect/train/confusion_matrix.png"
+if os.path.exists(conf_matrix_path):
+    display(Image(filename=conf_matrix_path, width=600))
+```
+
+2.**Training Results**:
+Shows a graphical summary of the training process.
+```bash
+conf_matrix_path = f"/content/{HOME}/datasets/{HOME}/datasets/{HOME}/datasets/runs/detect/train/results.png"
+if os.path.exists(conf_matrix_path):
+    display(Image(filename=conf_matrix_path, width=600))
+```
+
+3.**Validation Batch Predictions**:
+Displays predictions on a validation batch.
+
+```bash
+conf_matrix_path = f"/content/{HOME}/datasets/{HOME}/datasets/{HOME}/datasets/runs/detect/train/val_batch0_pred.jpg"
+if os.path.exists(conf_matrix_path):
+    display(Image(filename=conf_matrix_path, width=600))
+```
+
+## Directory Structure  :
+```bash
+.
+├── Qatari_License_Plate_Detection-2
+│   ├── train
+│   │   ├── images
+│   │   └── labels
+│   ├── test
+│   │   ├── images
+│   │   └── labels
+│   └── valid
+│       ├── images
+│       └── labels
+├── runs
+│   └── detect
+│       └── train
+│           ├── weights
+│           ├── confusion_matrix.png
+│           ├── results.png
+│           └── val_batch0_pred.jpg
+└── ...
+```
+
+** Key Directories:
+1- **Qatari_License_Plate_Detection-2/train**: Contains training images and labels.
+
+2- **Qatari_License_Plate_Detection-2/valid**: Contains validation images and labels.
+
+3- **Qatari_License_Plate_Detection-2/test**: Contains testing images and labels.
+
+4- **runs/detect/train**: Stores results from YOLOv8 training, including weights, confusion matrix, and validation predictions.
+
+## Dependencies :
+The following dependencies are required to run the project:
+
+- **Python 3.8+**
+
+- **Roboflow**: pip install roboflow==1.1.48
+
+- **Ultralytics YOLOv8**: pip install ultralytics
+
+- **Jupyter Notebook** for running and visualizing the training process.
+
+## Acknowledgements: 
+- **Roboflow**: For providing the tools to manage and preprocess datasets.
+
+- **Ultralytics**: For the YOLOv8 implementation.
+
+- **Google Colab**: For providing a free environment for training and evaluation.
+
+# Author
+
+**Husham Eina Abdalla**  
+Email: [heashm.eina@gmail.com](mailto:heashm.eina@gmail.com)  
+LinkedIn: [Husham E. Abdalla](https://www.linkedin.com/in/husham-e-abdalla/)
+
+Feel free to reach out with any questions or contributions!
+
+### Changes Made:
+1. Incorporated the provided directory structure explicitly under the **Directory Structure** section.
+2. Highlighted the excluded files and directories (`images`, `labels`, etc.) in the relevant paths.
+3. Adjusted the formatting to align with the provided structure and clarified the role of each directory.
+
+Replace placeholders like `[Your Name]` with your actual details.
